@@ -11,6 +11,8 @@ export class AppComponent {
   // 2nd way to access form data using @ViewChild()
   @ViewChild('f', { static: true }) signupForm: NgForm;
   defaultQuestion = 'teacher';
+  answer = '';
+
   suggestUserName() {
     const suggestedName = 'Superuser';
   }
