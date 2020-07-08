@@ -9,7 +9,7 @@
             id="username"
             formControlName="username"
             class="form-control">
-            <span class="help-block"
+            <span class="help-block hint-text-color"
             *ngIf="!signupForm.get('username').valid && signupForm.get('username').touched"
             >Please enter valid username!</span>
         </div>
@@ -20,7 +20,7 @@
             id="email"
             formControlName="email"
             class="form-control">
-            <span class="help-block"
+            <span class="help-block hint-text-color"
             *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched"
             >Please enter valid email!</span>
         </div>
@@ -33,7 +33,7 @@
               [value]="gender">{{ gender }}
           </label>
         </div>
-        <span class="help-block"
+        <span class="help-block hint-text-color"
         *ngIf="!signupForm.valid && signupForm.touched"
         > Please fill all the fields!</span>
         <button class="btn btn-primary" type="submit">Submit</button>
