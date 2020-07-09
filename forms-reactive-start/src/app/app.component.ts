@@ -22,10 +22,14 @@ export class AppComponent implements OnInit {
     });
   }
 
-  getControls(){
-    return (<FormArray>this.signupForm.get('hobbies')).controls;
-  }
+  // getControls(){
+  //   return (<FormArray>this.signupForm.get('hobbies')).controls;
+  // }
   
+  get controls(){
+    return (<FormArray>this.signupForm.get('hobbies')).controls;  
+  }
+
   onAddHobby(){
     const control = new FormControl(null, Validators.required);
     (<FormArray>this.signupForm.get('hobbies')).push(control);
