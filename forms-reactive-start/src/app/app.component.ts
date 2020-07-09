@@ -29,8 +29,26 @@ export class AppComponent implements OnInit {
     // });
 
     // Below code checks the status changes
-    this.signupForm.statusChanges.subscribe((status)=> {
-      console.log(status);
+    // this.signupForm.statusChanges.subscribe((status)=> {
+    //   console.log(status);
+    // });
+
+    // Setting value in Form
+    this.signupForm.setValue({
+      'userData': {
+        'username': 'Max',
+        'email': 'test@max.com'
+      }, 
+      'gender': 'female',
+      'hobbies': []
+    });
+
+    // Patching values in Form
+    this.signupForm.patchValue({
+      'userData': {
+        'username': 'Maxi',
+        'email': 'maxi@test.com'
+      }
     });
   }
 
