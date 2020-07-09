@@ -24,10 +24,14 @@ export class AppComponent implements OnInit {
     });
 
     // below code checks the Value changes
-    this.signupForm.valueChanges.subscribe( (value) => {
-      console.log(value);
-    });
+    // this.signupForm.valueChanges.subscribe( (value) => {
+    //   console.log(value);
+    // });
 
+    // Below code checks the status changes
+    this.signupForm.statusChanges.subscribe((status)=> {
+      console.log(status);
+    });
   }
 
   // getControls(){
