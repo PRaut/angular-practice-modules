@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+nav { background-color: grey; }
+nav a { padding: 10px 10px; color: white;}
+nav a:hover{ color: yellow;}
+
+.text-success { color: green;}
+.text-danger { color: red;}
+.text-info { font-style: italic;}

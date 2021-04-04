@@ -1,0 +1,29 @@
+<p>test works!</p>
+
+    <input type="text" #myInput [disabled]="isReadOnly" [(ngModel)]="textValue">
+    <button (click)="logMessage(myInput)">Log</button>
+
+
+
+<p [class]="successClass">You've entered : {{ textValue }}</p>
+<h4 [class.text-danger] = "hasError">Angular</h4>
+<h4 [ngClass]="textClasses">Angular</h4>
+
+Data Received from Parent : {{ name }}
+
+<p><strong>Pipe Demo</strong></p>
+<h3> {{ message }} </h3>
+<h3> {{ message  | uppercase }} </h3>
+<h3> {{ message | titlecase }} </h3>
+<h3> {{ message | slice: 4 }} </h3>
+
+<h3> {{ 5.123 | number: '1.2-4' }} </h3>
+<h3> {{ 5.123 | number: '2.4-4' }} </h3>
+<h3> {{ 5.154 | number: '3.1-2' }} </h3>
+
+<h3> {{40 | currency: 'INR': 'code' }}</h3>
+
+<h3> {{ currentDate | date: 'short' }}</h3>
+<h3> {{ currentDate | date: 'shortDate' }}</h3>
+<h3> {{ currentDate | date: 'shortTime' }}</h3>
+<h3> {{ currentDate | date: 'medium' }}</h3>
