@@ -1,6 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription, interval } from 'rxjs';
-import { count } from 'console';
 
 @Component({
   selector: 'app-home',
